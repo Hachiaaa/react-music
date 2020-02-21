@@ -10,6 +10,7 @@ import {
     changeFullScreen
   } from "./store/actionCreators";
 import MiniPlayer from "./miniPlayer/index";
+import NormalPlayer from './normalPlayer/index';
 
 function Player(props){
     const currentSong = {
@@ -19,7 +20,7 @@ function Player(props){
       }
     return(
         <div>
-            <MiniPlayer song={currentSong}/>
+            <NormalPlayer song={currentSong}/>
         </div>
     )
 }
